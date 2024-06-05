@@ -1,0 +1,35 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  /* Ajusta el espacio entre las imágenes */
+  padding: 1rem;
+  /* Ajusta el padding según sea necesario */
+  box-sizing: border-box;
+}
+
+.grid-columns-5 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-columns-4 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
